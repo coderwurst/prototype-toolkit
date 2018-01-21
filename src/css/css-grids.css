@@ -1,0 +1,69 @@
+/** Desktop Responsive **/
+.container {
+    display: grid;    
+    grid-template-columns: repeat(12, 1fr);     /** 12 columns, 1 fraction-unti wide **/
+    grid-template-rows: 100px 350px 100px;
+    grid-gap: 5px;
+    grid-template-areas:
+        ". h h h h h h h h h h ."
+        ". m m c c c c c c c c ."
+        ". f f f f f f f f f f .";
+}
+
+/** Tablet Responsive **/
+@media screen and (max-width: 768px) {
+    .container {
+        grid-template-rows: 50px 50px 350px 50px;
+        grid-template-areas:
+            ". h h h h h h h h h h ."
+            ". m m m m m m m m m m ."
+            ". c c c c c c c c c c ."
+            ". f f f f f f f f f f .";
+    }
+}
+
+/** Mobile Responsive **/
+@media screen and (max-width: 320px) {
+    .container {
+        grid-template-areas:
+            ". m m m m m h h h h h ."
+            ". c c c c c c c c c c ."
+            ". f f f f f f f f f f .";
+    }
+}
+
+
+.header {
+    grid-area: h;
+    background-color: #A83FB2;
+}
+
+@media screen and (max-width: 640px) {
+    .container {
+        grid-template-areas:
+            ". m m m m m h h h h h ."
+            ". c c c c c c c c c c ."
+            ". f f f f f f f f f f .";
+    }
+}
+
+.header {
+    grid-area: h;
+    background-color: #A83FB2;
+}
+
+.menu {
+    grid-area: m;
+    background-color: #F273FF;
+}
+
+.content {
+    grid-area: c;
+    background-color: #FFE38D;
+}
+
+.footer {
+   grid-area: f;
+   background-color: #48B298;
+}
+
