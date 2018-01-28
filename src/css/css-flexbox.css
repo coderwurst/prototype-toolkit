@@ -1,0 +1,33 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.home {
+    background-color: #A83FB2;
+    padding: 5px;
+}
+
+.search {
+    background-color: #F273FF;
+    /** margin-left: auto; align right **/
+    padding: 5px;
+}
+
+.logout {
+    background-color: #FFE38D;
+    /** margin-left: auto; align right **/
+    padding: 5px;
+}
+
+/** equal spread 
+.container > div {
+    flex: 1;
+} **/
+
+.search {
+    flex: 1;
+}
